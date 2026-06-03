@@ -1,3 +1,35 @@
+<?php
+
+    $koneksi = mysqli_connect("localhost", "root", "root", "ifrizkiweekly");
+
+    if($koneksi)
+    {
+        echo "Berhasil Konek";
+    }
+
+
+    $query = "SELECT * FROM mahasiswa";
+
+    $result = mysqli_query($koneksi, $query);
+
+    //// ambil data (fetch) mahasiswa dari lemari (result)
+
+
+    // ada 4 cara 
+    //-----------------------
+
+    //// mysqli_fetch_row
+    //// mysqli_fetch_assoc
+    //// mysqli_fetch_object
+    //// mysqli_fetch_array
+
+    $mhs = mysqli_fetch_row($result);
+
+    var_dump ($mhs)
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

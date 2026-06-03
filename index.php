@@ -13,12 +13,15 @@
             <td><a href="index.html">home</a>
             </td>
 
-            <td><a href="profile.html">profil</a>
+            <td><a href="profile.php">profil</a>
             </td>
 
             <td><a href="contact.html">contact</a>
             </td>
             
+            <td><a href="mahasiswa.php">mahasiswa</a>
+            </td>
+
         </tr>
     <h2>sambutan kaprodi</h2>
     <img src="aset/images/OIP.jpg" alt="kaprodi" width="500px"  />

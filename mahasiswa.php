@@ -1,6 +1,6 @@
 <?php
 
-    $koneksi = mysqli_connect("localhost", "root", "root", "ifrizkiweekly");
+    $koneksi = mysqli_connect("localhost", "root", "", "ifmkrweekly");
 
     if($koneksi)
     {

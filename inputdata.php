@@ -1,3 +1,11 @@
+<?php
+    if(isset($_POST("kirim")))
+    {
+
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +15,12 @@
 </head>
 <body>
     <h2>tambah data mahasiswa</h2>
-    <form action="mahasiswa.html" method="post">
+    <form action="" method="post">
         <table>
             <tr>
                 <td><label for="nama">nama</label></td>
                 <td>:</td>
-                <td><input type="text" name="nama" id="nama"/></td>
+                <td><input type="text" name="nama" id="nama" requered/></td>
             </tr>
              <tr>
                 <td><label for="nim">nim</label></td>
@@ -20,7 +28,7 @@
                 <td><input type="text" name="nim" id="nim"/></td>
             </tr>
         </table>
-        <button type="submit" name="submit" id="submit">tambah data</button>
+        <button type="submit" name="kirim">tambah data</button>
     </form>
 </body>
 </html>

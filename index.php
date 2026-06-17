@@ -19,7 +19,7 @@
             <td><a href="contact.html">contact</a>
             </td>
             
-            <td><a href="mahasiswa.php">mahasiswa</a>
+            <td><a href="mahasiswa.html">mahasiswa</a>
             </td>
 
         </tr>

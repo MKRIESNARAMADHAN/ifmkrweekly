@@ -28,7 +28,28 @@
     var_dump ($mhs)
 
 ?>
-
+<?php 
+            $i = 1; // Untuk nomor urut
+            // 3. Looping untuk mengambil semua baris data
+            while ($row = mysqli_fetch_assoc($result)) : 
+            ?>
+            <tr>
+                <td><?= $i; ?></td>
+                <td><?= $row['id']; ?></td> 
+                <td><?= $row['nama']; ?></td> 
+                <td><?= $row['nim']; ?></td>
+                <td><?= $row['jurusan']; ?></td>
+                <td><?= $row['email']; ?></td>
+                <td><?= $row['no_hp']; ?></td>
+                <td><?= $row['foto']; ?></td>
+                <td>
+                    <img src="aset/images/OIP.jpg" width="70" alt="Foto Mahasiswa" />
+                </td>
+            </tr>
+            <?php 
+            $i++; 
+            endwhile; 
+            ?>
 
 <!DOCTYPE html>
 <html lang="en">

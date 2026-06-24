@@ -24,7 +24,21 @@
     //// mysqli_fetch_array
 
     $mhs = mysqli_fetch_row($result);
-
+while ($row = mysqli_fetch_assoc($result)) : 
+            ?>
+            <tr>
+                <td><?= $i; ?></td>
+                <td><?= $row['id']; ?></td> 
+                <td><?= $row['nama']; ?></td> 
+                <td><?= $row['nim']; ?></td>
+                <td><?= $row['jurusan']; ?></td>
+                <td><?= $row['email']; ?></td>
+                <td><?= $row['no_hp']; ?></td>
+                <td><?= $row['foto']; ?></td>
+                <td>
+                    <img src="aset/images/OIP.jpg" width="70" alt="Foto Mahasiswa" />
+                </td>
+            </tr>
     var_dump ($mhs)
 
 ?>

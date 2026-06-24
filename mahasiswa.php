@@ -64,7 +64,7 @@
             <?php 
             $i = 1; // Untuk nomor urut
             // 3. Looping untuk mengambil semua baris data
-            while ($row = mysqli_query_fetch_assoc($result)) : 
+            while ($row = mysqli_fetch_assoc($result)) : 
             ?>
             <tr>
                 <td><?= $i; ?></td>
